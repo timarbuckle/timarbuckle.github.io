@@ -1,2 +1,1 @@
-markdown: redcarpet
 exclude: ['README.md', 'node_modules']
