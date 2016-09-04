@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<header>
+<div class="container">
+<h1>Posts</h1>
+</div>
+</header>
+
+Some very important stuff is happening. Tune in here for the latest...
+
+<ul>
+  {% for post in site.posts limit:10 %}
+  <li>
+  <a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
+  <p>{{ post.meta }}</p>
+  </li>
+  {% endfor %}
+</ul>
