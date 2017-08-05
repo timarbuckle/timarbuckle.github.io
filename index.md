@@ -5,8 +5,9 @@ permalink: index.html
 
 ## Go Away
 
-This site is garbage while i learn how use Jekyll with gityhub pages.
-It will likely be garbage when it is done to so spend your time so wisely.
+This site is garbage while i learn how use Jekyll with github pages.
+It will likely be garbage when it is done so spend your time so wisely,
+somewhere else.
 
 ## Support
 
