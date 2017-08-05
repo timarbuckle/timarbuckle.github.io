@@ -1,17 +1,21 @@
 ---
+layout: default
 title: Testing GitHub Pages
 permalink: index.html
 ---
 ## Posts
 
-<ul>
-  {% for post in site.posts %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . </small></p>
-  </li>
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+   {% for post in site.posts %}
+   <li>
+     <a href="{{ post.url }}">{{ post.title }}</a>
+     <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . </small></p>
+   </li>
   {% endfor %}
-</ul>
+  </ul>
+</div>
 
 ## Go Away
 
