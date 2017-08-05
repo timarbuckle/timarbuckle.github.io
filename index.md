@@ -8,10 +8,10 @@ permalink: index.html
   {% for post in site.posts %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
+    <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . </small></p>
   </li>
   {% endfor %}
 </ul>
-
 
 ## Go Away
 
