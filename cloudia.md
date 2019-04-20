@@ -8,7 +8,7 @@ permalink: cloudia.html
 
 ## Cloudia Test
 
-<div id="info">
+<div>
   <p id="info_start">Click on the microphone icon and begin speaking.</p>
   <p id="info_speak_now">Speak now.</p>
   <p id="info_no_speech">No speech was detected. You may need to adjust your
@@ -26,32 +26,26 @@ permalink: cloudia.html
      Upgrade to <a href="//www.google.com/chrome">Chrome</a>
      version 25 or later.</p>
 </div>
+
 <div class="right">
   <button id="start_button" onclick="startButton(event)">
     <img id="start_img" src="images/mic.gif" alt="Start"></button>
 </div>
+
 <div id="results">
   <span id="final_span" class="final"></span>
   <span id="interim_span" class="interim"></span>
   <p>
 </div>
+
 <div class="center">
-  <div class="sidebyside" style="text-align:right">
+  <div style="text-align:right">
     <button id="copy_button" class="button" onclick="copyButton()">
       Copy and Paste</button>
     <div id="copy_info" class="info">
       Press Control-C to copy text.<br>(Command-C on Mac.)
     </div>
   </div>
-  <div class="sidebyside">
-    <button id="email_button" class="button" onclick="emailButton()">
-      Create Email</button>
-    <div id="email_info" class="info">
-      Text sent to default email application.<br>
-      (See chrome://settings/handlers to change.)
-    </div>
-  </div>
-  <p>
   <div id="div_language">
     <select id="select_language" onchange="updateCountry()"></select>
     &nbsp;&nbsp;
