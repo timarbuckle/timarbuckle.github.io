@@ -1,4 +1,4 @@
-var langs =
+var langs = [
  ['Afrikaans',       ['af-ZA']],
  ['Bahasa Indonesia',['id-ID']],
  ['Bahasa Melayu',   ['ms-MY']],
@@ -54,13 +54,14 @@ var langs =
  ['български',       ['bg-BG']],
  ['Pусский',         ['ru-RU']],
  ['Српски',          ['sr-RS']],
- ['한국어',            ['ko-KR']],
- ['中文',             ['cmn-Hans-CN', '普通话 (中国大陆)'],
+ ['한국어',          ['ko-KR']],
+ ['中文',            ['cmn-Hans-CN', '普通话 (中国大陆)'],
                      ['cmn-Hans-HK', '普通话 (香港)'],
                      ['cmn-Hant-TW', '中文 (台灣)'],
                      ['yue-Hant-HK', '粵語 (香港)']],
- ['日本語',           ['ja-JP']],
- ['Lingua latīna',   ['la']]];
+ ['日本語',          ['ja-JP']],
+ ['Lingua latīna',   ['la']]
+];
 
 for (var i = 0; i < langs.length; i++) {
   select_language.options[i] = new Option(langs[i][0], i);
