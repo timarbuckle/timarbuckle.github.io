@@ -1,5 +1,5 @@
 ---
-title: Testing GitHub Pages
+title: About
 permalink: about.html
 ---
 
