@@ -28,7 +28,7 @@ permalink: cloudia.html
 </div>
 <div class="right">
   <button id="start_button" onclick="startButton(event)">
-    <img id="start_img" src="/images/mic.gif" alt="Start"></button>
+    <img id="start_img" src="images/mic.gif" alt="Start"></button>
 </div>
 <div id="results">
   <span id="final_span" class="final"></span>
