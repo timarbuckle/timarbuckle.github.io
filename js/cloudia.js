@@ -63,12 +63,24 @@ var langs = [
  ['Lingua latīna',   ['la']]
 ];
 
+var select_language = document.getElementById("select_language");
 for (var i = 0; i < langs.length; i++) {
   select_language.options[i] = new Option(langs[i][0], i);
 }
 select_language.selectedIndex = 6;
 updateCountry();
 select_dialect.selectedIndex = 6;
+
+var info_messages = {};
+  info_messages["info_start"] = "Click on the microphone icon and begin speaking.";
+  info_messages["info_speak_now"] = "Speak now.";
+  info_messages["info_no_speech"] = "No speech was detected. You may need to adjust your <a href=\"//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892\"> microphone settings</a>.";
+  info_messages["info_no_microphone"] = "No microphone was found. Ensure that a microphone is installed and that <a href=\"//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892\"> microphone settings</a> are configured correctly.";
+  info_messages["info_allow"] = "Click the \"Allow\" button above to enable your microphone.";
+  info_messages["info_denied"] = "Permission to use microphone was denied.";
+  info_messages["info_blocked"] = "Permission to use microphone is blocked. To change, go to chrome://settings/contentExceptions#media-stream";
+  info_messages["info_upgrade"] = "Web Speech API is not supported by this browser. Upgrade to <a href=\"//www.google.com/chrome\">Chrome</a> version 25 or later.";
+
 showInfo('info_start');
 
 function updateCountry() {
@@ -202,16 +214,8 @@ function startButton(event) {
 }
 
 function showInfo(s) {
-  if (s) {
-    for (var child = info.firstChild; child; child = child.nextSibling) {
-      if (child.style) {
-        child.style.display = child.id == s ? 'inline' : 'none';
-      }
-    }
-    info.style.visibility = 'visible';
-  } else {
-    info.style.visibility = 'hidden';
-  }
+  var info_message = document.getElementById("info_message");
+  info_message.innerHTML = info_messages[s];
 }
 
 var current_style;
