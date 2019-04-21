@@ -80,8 +80,9 @@ var info_messages = {};
   info_messages["info_denied"] = "Permission to use microphone was denied.";
   info_messages["info_blocked"] = "Permission to use microphone is blocked. To change, go to chrome://settings/contentExceptions#media-stream";
   info_messages["info_upgrade"] = "Web Speech API is not supported by this browser. Upgrade to <a href=\"//www.google.com/chrome\">Chrome</a> version 25 or later.";
-  info_message["info_cloudia"] = "Sending text to Cloudia";
-  info_message["info_none"] = "";
+  info_messages["info_cloudia"] = "Sending response text to Cloudia";
+  info_messages["info_hari"] = "Sending translated text to HARI";
+  info_messages["info_none"] = "";
 
 showInfo('info_start');
 
@@ -189,11 +190,15 @@ function capitalize(s) {
   return s.replace(first_char, function(m) { return m.toUpperCase(); });
 }
 
-function sendCloudia() {
+function sendHari() {
   if (recognizing) {
     recognizing = false;
     recognition.stop();
   }
+  showInfo('info_hari');
+}
+
+function sendCloudia() {
   showInfo('info_cloudia');
 }
 
