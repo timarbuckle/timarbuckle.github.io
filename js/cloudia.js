@@ -85,6 +85,7 @@ var info_messages = {};
   info_messages["info_none"] = "";
 
 showInfo('info_start');
+showButtons('inline-block');
 
 function updateCountry() {
   for (var i = select_dialect.options.length - 1; i >= 0; i--) {
@@ -150,7 +151,7 @@ if (!('webkitSpeechRecognition' in window)) {
     if (window.getSelection) {
       window.getSelection().removeAllRanges();
       var range = document.createRange();
-      range.selectNode(document.getElementById('final_span'));
+      // range.selectNode(document.getElementById('final_span'));
       window.getSelection().addRange(range);
     }
   };

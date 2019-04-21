@@ -33,9 +33,13 @@ permalink: cloudia.html
     <button id="hari_button" class="button" onclick="sendHari()">Send to HARI</button>
 </div>
 
+<p></p>
+
 <div id="response">
   <span id="hari_response_span" class="final"></span>
 </div>
+
+<p></p>
 
 <div style="text-align:right">
     <button id="cloudia_button" class="button" onclick="sendCloudia()">Send to Cloudia</button>
