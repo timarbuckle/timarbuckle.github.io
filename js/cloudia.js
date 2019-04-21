@@ -216,7 +216,12 @@ function startButton(event) {
 
 function showInfo(s) {
   var info_message = document.getElementById("info_message");
-  info_message.innerHTML = info_messages[s];
+  if (s.length == 0) {
+    info_message.innerHTML = "";
+  }
+  else {
+    info_message.innerHTML = info_messages[s];
+  }
 }
 
 var current_style;
