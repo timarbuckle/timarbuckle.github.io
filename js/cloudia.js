@@ -231,5 +231,4 @@ function showButtons(style) {
   }
   current_style = style;
   cloudia_button.style.display = style;
-  cloudia_info.style.display = 'none';
 }
