@@ -215,7 +215,8 @@ function startButton(event) {
   interim_span.innerHTML = '';
   start_img.src = '/images/mic-slash.gif';
   showInfo('info_allow');
-  showButtons('none');
+  /* showButtons('none'); */
+  showButtons('inline-block');
   start_timestamp = event.timeStamp;
 }
 
@@ -235,5 +236,6 @@ function showButtons(style) {
     return;
   }
   current_style = style;
+  hari_button.style.display = style;
   cloudia_button.style.display = style;
 }
