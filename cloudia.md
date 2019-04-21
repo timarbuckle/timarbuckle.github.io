@@ -30,10 +30,6 @@ permalink: cloudia.html
 </div>
 
 <div style="text-align:right">
-    <button id="copy_button" class="button" onclick="copyButton()">
-      Send to Cloudia</button>
-    <div id="copy_info" class="info">
-      Press Control-C to copy text.<br>(Command-C on Mac.)
-    </div>
+    <button id="cloudia_button" class="button" onclick="sendCloudia()">Send to Cloudia</button>
 </div>
 <script src="/js/cloudia.js"></script>

@@ -187,14 +187,12 @@ function capitalize(s) {
   return s.replace(first_char, function(m) { return m.toUpperCase(); });
 }
 
-function copyButton() {
+function sendCloudia() {
   if (recognizing) {
     recognizing = false;
     recognition.stop();
   }
-  copy_button.style.display = 'none';
-  copy_info.style.display = 'inline-block';
-  showInfo('');
+  showInfo('sending to Cloudia');
 }
 
 function startButton(event) {
@@ -230,6 +228,6 @@ function showButtons(style) {
     return;
   }
   current_style = style;
-  copy_button.style.display = style;
-  copy_info.style.display = 'none';
+  cloudia_button.style.display = style;
+  cloudia_info.style.display = 'none';
 }
