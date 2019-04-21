@@ -4,7 +4,6 @@ permalink: cloudia.html
 ---
 
 <link href="/css/cloudia.css" rel="stylesheet">
-<script src="/js/cloudia.js"></script>
 
 ## Cloudia Test
 
@@ -37,3 +36,5 @@ permalink: cloudia.html
     <select id="select_dialect"></select>
   </div>
 </div>
+
+<script src="/js/cloudia.js"></script>
