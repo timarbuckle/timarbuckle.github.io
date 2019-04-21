@@ -22,13 +22,6 @@ permalink: cloudia.html
 </div>
 
 <div class="center">
-  <div style="text-align:right">
-    <button id="copy_button" class="button" onclick="copyButton()">
-      Copy and Paste</button>
-    <div id="copy_info" class="info">
-      Press Control-C to copy text.<br>(Command-C on Mac.)
-    </div>
-  </div>
   <div id="div_language">
     <select id="select_language" onchange="updateCountry()"></select>
     &nbsp;&nbsp;
@@ -36,4 +29,11 @@ permalink: cloudia.html
   </div>
 </div>
 
+<div style="text-align:right">
+    <button id="copy_button" class="button" onclick="copyButton()">
+      Send to Cloudia</button>
+    <div id="copy_info" class="info">
+      Press Control-C to copy text.<br>(Command-C on Mac.)
+    </div>
+</div>
 <script src="/js/cloudia.js"></script>
