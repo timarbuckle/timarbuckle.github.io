@@ -80,6 +80,8 @@ var info_messages = {};
   info_messages["info_denied"] = "Permission to use microphone was denied.";
   info_messages["info_blocked"] = "Permission to use microphone is blocked. To change, go to chrome://settings/contentExceptions#media-stream";
   info_messages["info_upgrade"] = "Web Speech API is not supported by this browser. Upgrade to <a href=\"//www.google.com/chrome\">Chrome</a> version 25 or later.";
+  info_message["info_cloudia"] = "Sending text to Cloudia";
+  info_message["info_none"] = "";
 
 showInfo('info_start');
 
@@ -143,7 +145,7 @@ if (!('webkitSpeechRecognition' in window)) {
       showInfo('info_start');
       return;
     }
-    showInfo('');
+    showInfo('info_none');
     if (window.getSelection) {
       window.getSelection().removeAllRanges();
       var range = document.createRange();
@@ -192,7 +194,7 @@ function sendCloudia() {
     recognizing = false;
     recognition.stop();
   }
-  showInfo('sending to Cloudia');
+  showInfo('info_cloudia');
 }
 
 function startButton(event) {
