@@ -21,7 +21,7 @@ permalink: speech.html
 <!-- HTML5 Speech Recognition API -->
 <script>
   function showResults() {
-    console.log(document.getElementById("transcript");
+    console.log(document.getElementById("transcript"));
   }
   function startDictation() {
 
