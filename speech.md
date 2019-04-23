@@ -11,7 +11,7 @@ permalink: speech.html
 </style>
 
 <!-- Search Form -->
-<form id="labnol" method="get" action="console.log(document.getElementById(\"transcript\")">
+<form id="labnol" method="get" action="showResults()">
   <div class="speech">
     <input type="text" name="q" id="transcript" placeholder="Speak" />
     <img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" />
@@ -20,6 +20,9 @@ permalink: speech.html
 
 <!-- HTML5 Speech Recognition API -->
 <script>
+  function showResults() {
+    console.log(document.getElementById("transcript");
+  }
   function startDictation() {
 
     if (window.hasOwnProperty('webkitSpeechRecognition')) {
