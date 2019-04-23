@@ -11,7 +11,7 @@ permalink: speech.html
 </style>
 
 <!-- Search Form -->
-<form id="labnol" method="get" action="">
+<form id="labnol" method="get" action="console.log(document.getElementById(\"transcript\")">
   <div class="speech">
     <input type="text" name="q" id="transcript" placeholder="Speak" />
     <img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" />
