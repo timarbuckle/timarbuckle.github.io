@@ -231,7 +231,7 @@ function showInfo(s) {
   }
 }
 
-var current_style = none;
+var current_style = null;
 function showButtons(style) {
   if (style == current_style) {
     return;
